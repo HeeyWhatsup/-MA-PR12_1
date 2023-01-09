@@ -17,7 +17,7 @@ jobs:
 
      #Test container
       - name: Run Docker Container
-        run: docker run -p 8000:80 -d whatsup2021/ma-author-service:latest
+        run: docker run -p 8001:80 -d whatsup2021/ma-author-service:latest
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
