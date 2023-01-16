@@ -27,7 +27,7 @@ class TestAuthors():
         assert response.json().get('genre') == 'genre'
         assert response.json().get('id') == 0
 
-    def test_get_not_empty_authors(self):
+    def test_get_not_empty_authors():
         response = requests.get(f'{api_url}/v1/auth')
         assert response.status_code == 200
         assert len(response.json()) == 1
